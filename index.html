@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INDUSTRIA | Smart Industrial Approval & Compliance</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="brand">
+        <div class="brand-logo">I</div>
+
+        <div>
+            <h2>INDUSTRIA</h2>
+            <span>Smart Industrial Governance</span>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#approvals">Approvals</a>
+        <a href="#documents">Documents</a>
+        <a href="#compliance">Compliance</a>
+        <a href="#incentives">Incentives</a>
+    </nav>
+
+    <button class="profile-btn" onclick="openProfile()">
+        Applicant Profile
+    </button>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="badge">
+            SIH26130 • SMART AUTOMATION
+        </div>
+
+        <h1>
+            From Application Chaos
+            <span>to Approval Clarity.</span>
+        </h1>
+
+        <p>
+            An AI-assisted platform that maps industrial approvals,
+            validates documents, automates compliance workflows and
+            connects industries with relevant government support.
+        </p>
+
+        <div class="hero-buttons">
+
+            <button class="primary-btn" onclick="startApplication()">
+                Start Industrial Application →
+            </button>
+
+            <button class="secondary-btn" onclick="showDemo()">
+                Explore Demo
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="hero-visual">
+
+        <div class="approval-card">
+
+            <div class="card-header">
+                <span>Approval Intelligence</span>
+                <span class="live">● LIVE</span>
+            </div>
+
+            <div class="approval-progress">
+
+                <div class="progress-circle">
+                    <strong>72%</strong>
+                    <small>Ready</small>
+                </div>
+
+                <div>
+                    <h3>Manufacturing Unit</h3>
+                    <p>Maharashtra</p>
+
+                    <div class="mini-progress">
+                        <div></div>
+                    </div>
+
+                    <small>8 / 11 requirements completed</small>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="floating-card card-one">
+            ✓ Documents Verified
+        </div>
+
+        <div class="floating-card card-two">
+            ⚡ SLA Risk Detected
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= DASHBOARD ================= -->
+
+<section id="dashboard" class="section">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="eyebrow">COMMAND CENTER</span>
+
+            <h2>Industrial Application Dashboard</h2>
+
+            <p>
+                One workspace for approvals, documents, compliance,
+                workflow and government support.
+            </p>
+        </div>
+
+        <div class="status-pill">
+            ● Application Active
+        </div>
+
+    </div>
+
+
+    <div class="stats-grid">
+
+        <div class="stat-card">
+            <span>Approvals Required</span>
+            <strong>11</strong>
+            <small>Mapped automatically</small>
+        </div>
+
+        <div class="stat-card">
+            <span>Documents</span>
+            <strong>18</strong>
+            <small class="success">14 verified</small>
+        </div>
+
+        <div class="stat-card">
+            <span>Compliance Tasks</span>
+            <strong>07</strong>
+            <small>2 due this week</small>
+        </div>
+
+        <div class="stat-card">
+            <span>Potential Incentives</span>
+            <strong>₹18.5L</strong>
+            <small>3 schemes discovered</small>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MODULES ================= -->
+
+<section class="section modules-section">
+
+    <div class="section-heading center">
+
+        <span class="eyebrow">INTELLIGENCE LAYER</span>
+
+        <h2>Three engines. One approval journey.</h2>
+
+        <p>
+            INDUSTRIA combines regulatory intelligence,
+            document validation and workflow automation.
+        </p>
+
+    </div>
+
+
+    <div class="module-grid">
+
+
+        <!-- APPROVAL MAPPER -->
+
+        <div class="module-card">
+
+            <div class="module-icon">🗺️</div>
+
+            <span class="module-number">01</span>
+
+            <h3>Smart Approval Mapper</h3>
+
+            <p>
+                Generates a dependency-aware approval checklist
+                based on industry profile, location and project type.
+            </p>
+
+            <ul>
+                <li>Industry-specific approvals</li>
+                <li>Department mapping</li>
+                <li>Approval dependencies</li>
+                <li>Estimated SLA</li>
+            </ul>
+
+            <button onclick="openApprovalMapper()">
+                Open Approval Mapper →
+            </button>
+
+        </div>
+
+
+        <!-- DOCUMENT VALIDATOR -->
+
+        <div class="module-card">
+
+            <div class="module-icon">📄</div>
+
+            <span class="module-number">02</span>
+
+            <h3>Document & Application Validator</h3>
+
+            <p>
+                Pre-checks uploaded documents before submission
+                and identifies missing or inconsistent information.
+            </p>
+
+            <ul>
+                <li>Document completeness</li>
+                <li>Expiry detection</li>
+                <li>Data consistency</li>
+                <li>Application readiness</li>
+            </ul>
+
+            <button onclick="openDocumentValidator()">
+                Validate Documents →
+            </button>
+
+        </div>
+
+
+        <!-- COPILOT -->
+
+        <div class="module-card">
+
+            <div class="module-icon">🤖</div>
+
+            <span class="module-number">03</span>
+
+            <h3>Compliance & Workflow Copilot</h3>
+
+            <p>
+                Tracks application status, compliance deadlines,
+                queries and SLA risks from one interface.
+            </p>
+
+            <ul>
+                <li>Workflow automation</li>
+                <li>SLA monitoring</li>
+                <li>Query handling</li>
+                <li>Renewal alerts</li>
+            </ul>
+
+            <button onclick="openCopilot()">
+                Launch Copilot →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= APPROVAL MAPPER ================= -->
+
+<section id="approvals" class="section dark-section">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="eyebrow">APPROVAL INTELLIGENCE</span>
+
+            <h2>Dependency-Aware Approval Map</h2>
+
+            <p>
+                The platform converts an industry profile into a
+                structured approval journey.
+            </p>
+        </div>
+
+        <button class="primary-btn" onclick="generateApprovals()">
+            Generate Map
+        </button>
+
+    </div>
+
+
+    <div class="workflow">
+
+        <div class="workflow-item completed">
+
+            <div class="workflow-icon">✓</div>
+
+            <div>
+                <span>STEP 01</span>
+                <h3>Business Registration</h3>
+                <p>Company & enterprise registration</p>
+            </div>
+
+            <strong>Completed</strong>
+
+        </div>
+
+
+        <div class="connector"></div>
+
+
+        <div class="workflow-item completed">
+
+            <div class="workflow-icon">✓</div>
+
+            <div>
+                <span>STEP 02</span>
+                <h3>Land / Building Approval</h3>
+                <p>Location and construction permissions</p>
+            </div>
+
+            <strong>Completed</strong>
+
+        </div>
+
+
+        <div class="connector"></div>
+
+
+        <div class="workflow-item active">
+
+            <div class="workflow-icon">03</div>
+
+            <div>
+                <span>STEP 03</span>
+                <h3>Pollution Control Consent</h3>
+                <p>Requires approved project documents</p>
+            </div>
+
+            <strong>In Progress</strong>
+
+        </div>
+
+
+        <div class="connector"></div>
+
+
+        <div class="workflow-item pending">
+
+            <div class="workflow-icon">04</div>
+
+            <div>
+                <span>STEP 04</span>
+                <h3>Factory / Labour Compliance</h3>
+                <p>Triggered after operational readiness</p>
+            </div>
+
+            <strong>Pending</strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= DOCUMENT VALIDATOR ================= -->
+
+<section id="documents" class="section">
+
+    <div class="section-heading center">
+
+        <span class="eyebrow">DOCUMENT INTELLIGENCE</span>
+
+        <h2>Application Readiness Checker</h2>
+
+        <p>
+            Detect missing documents and potential submission issues
+            before they cause delays.
+        </p>
+
+    </div>
+
+
+    <div class="validator">
+
+        <div class="upload-box">
+
+            <div class="upload-icon">↑</div>
+
+            <h3>Upload Application Documents</h3>
+
+            <p>
+                PDF, JPG, PNG • OCR-ready
+            </p>
+
+            <input
+                type="file"
+                id="documentInput"
+                multiple
+                onchange="validateFiles()"
+            >
+
+            <label for="documentInput">
+                Select Documents
+            </label>
+
+        </div>
+
+
+        <div class="validation-results">
+
+            <div class="validation-header">
+
+                <div>
+                    <span class="eyebrow">VALIDATION ENGINE</span>
+                    <h3>Pre-submission Check</h3>
+                </div>
+
+                <div class="readiness-score">
+                    <strong id="readiness">78%</strong>
+                    <span>Ready</span>
+                </div>
+
+            </div>
+
+
+            <div class="check success-check">
+                <span>✓</span>
+                <div>
+                    <strong>Identity / Registration Data</strong>
+                    <small>Verified</small>
+                </div>
+            </div>
+
+
+            <div class="check success-check">
+                <span>✓</span>
+                <div>
+                    <strong>Project Information</strong>
+                    <small>Consistent across documents</small>
+                </div>
+            </div>
+
+
+            <div class="check warning-check">
+                <span>!</span>
+                <div>
+                    <strong>Environmental Documents</strong>
+                    <small>1 supporting document may be required</small>
+                </div>
+            </div>
+
+
+            <div class="check error-check">
+                <span>×</span>
+                <div>
+                    <strong>Fire Safety Certificate</strong>
+                    <small>Missing</small>
+                </div>
+            </div>
+
+            <button class="primary-btn" onclick="runValidation()">
+                Run Full Validation
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= COMPLIANCE ================= -->
+
+<section id="compliance" class="section compliance-section">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="eyebrow">WORKFLOW COPILOT</span>
+
+            <h2>Compliance Control Center</h2>
+
+            <p>
+                Track tasks, deadlines, queries and SLA risks.
+            </p>
+        </div>
+
+        <div class="sla-alert">
+            ⚠ 1 SLA Risk
+        </div>
+
+    </div>
+
+
+    <div class="compliance-grid">
+
+        <div class="task-panel">
+
+            <h3>Active Workflow</h3>
+
+            <div class="task">
+                <div class="task-status done">✓</div>
+                <div>
+                    <strong>Application submitted</strong>
+                    <small>29 Sept 2026</small>
+                </div>
+            </div>
+
+            <div class="task">
+                <div class="task-status done">✓</div>
+                <div>
+                    <strong>Document validation</strong>
+                    <small>Completed</small>
+                </div>
+            </div>
+
+            <div class="task">
+                <div class="task-status active-status">●</div>
+                <div>
+                    <strong>Department review</strong>
+                    <small>In progress</small>
+                </div>
+            </div>
+
+            <div class="task">
+                <div class="task-status pending-status">○</div>
+                <div>
+                    <strong>Inspection</strong>
+                    <small>Awaiting department</small>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="copilot-panel">
+
+            <div class="copilot-title">
+                <div class="bot-icon">🤖</div>
+
+                <div>
+                    <h3>Compliance Copilot</h3>
+                    <small>AI-assisted guidance</small>
+                </div>
+            </div>
+
+
+            <div class="chat-area" id="chatArea">
+
+                <div class="bot-message">
+                    Hello! I can help you understand approval
+                    requirements, compliance tasks, documents and
+                    SLA risks.
+                </div>
+
+            </div>
+
+
+            <div class="chat-input">
+
+                <input
+                    id="chatInput"
+                    placeholder="Ask about your application..."
+                    onkeypress="handleChat(event)"
+                >
+
+                <button onclick="sendMessage()">→</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INCENTIVES ================= -->
+
+<section id="incentives" class="section">
+
+    <div class="section-heading center">
+
+        <span class="eyebrow">GOVERNMENT SUPPORT</span>
+
+        <h2>Incentive Discovery Engine</h2>
+
+        <p>
+            Identify potentially relevant government support
+            based on your verified industrial profile.
+        </p>
+
+    </div>
+
+
+    <div class="incentive-grid">
+
+        <div class="incentive-card">
+
+            <span class="scheme-tag">MANUFACTURING</span>
+
+            <h3>Industrial Investment Support</h3>
+
+            <p>
+                Potential support based on project investment,
+                location and employment generation.
+            </p>
+
+            <div class="incentive-bottom">
+                <strong>Potential Match</strong>
+                <button onclick="viewScheme('Industrial Investment Support')">
+                    View →
+                </button>
+            </div>
+
+        </div>
+
+
+        <div class="incentive-card">
+
+            <span class="scheme-tag">EMPLOYMENT</span>
+
+            <h3>Employment-linked Incentive</h3>
+
+            <p>
+                Support opportunities connected to eligible
+                employment generation.
+            </p>
+
+            <div class="incentive-bottom">
+                <strong>Potential Match</strong>
+                <button onclick="viewScheme('Employment-linked Incentive')">
+                    View →
+                </button>
+            </div>
+
+        </div>
+
+
+        <div class="incentive-card">
+
+            <span class="scheme-tag">MSME</span>
+
+            <h3>MSME Support Programs</h3>
+
+            <p>
+                Discover possible financial and operational
+                support programs for qualifying enterprises.
+            </p>
+
+            <div class="incentive-bottom">
+                <strong>Potential Match</strong>
+                <button onclick="viewScheme('MSME Support Programs')">
+                    View →
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ARCHITECTURE ================= -->
+
+<section class="architecture-section">
+
+    <div class="section-heading center">
+
+        <span class="eyebrow">SYSTEM ARCHITECTURE</span>
+
+        <h2>Built for Explainable Smart Automation</h2>
+
+    </div>
+
+
+    <div class="architecture">
+
+        <div class="arch-layer">
+
+            <span>USER LAYER</span>
+
+            <div class="arch-box">
+                👤 Applicant / Industry
+            </div>
+
+            <div class="arch-box">
+                🏛️ Official / Department
+            </div>
+
+        </div>
+
+
+        <div class="arrow">↓</div>
+
+
+        <div class="arch-layer highlight-layer">
+
+            <span>INTELLIGENCE LAYER</span>
+
+            <div class="arch-box">
+                🧠 Approval Rules Engine
+            </div>
+
+            <div class="arch-box">
+                📚 Regulatory Knowledge Base
+            </div>
+
+            <div class="arch-box">
+                🎯 Eligibility & Risk Logic
+            </div>
+
+        </div>
+
+
+        <div class="arrow">↓</div>
+
+
+        <div class="arch-layer">
+
+            <span>WORKFLOW LAYER</span>
+
+            <div class="arch-box">
+                🔄 Application State Machine
+            </div>
+
+            <div class="arch-box">
+                ⚡ Parallel Routing
+            </div>
+
+            <div class="arch-box">
+                ⏱️ SLA + Escalation Engine
+            </div>
+
+        </div>
+
+
+        <div class="arrow">↓</div>
+
+
+        <div class="arch-layer">
+
+            <span>DATA & INTEGRATION</span>
+
+            <div class="arch-box">
+                🗃️ Verified Data Store
+            </div>
+
+            <div class="arch-box">
+                📄 Document Metadata
+            </div>
+
+            <div class="arch-box">
+                🔐 APIs / Audit Logs
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div>
+        <strong>INDUSTRIA</strong>
+        <p>
+            Smart Automation for Industrial Governance
+        </p>
+    </div>
+
+    <div>
+        <span>SIH26130</span>
+        <small>Government of Maharashtra</small>
+    </div>
+
+</footer>
+
+
+<!-- ================= MODAL ================= -->
+
+<div id="modal" class="modal">
+
+    <div class="modal-content">
+
+        <button class="close-btn" onclick="closeModal()">×</button>
+
+        <div id="modalContent"></div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
